@@ -13,14 +13,17 @@ public class Main {
 		list.add(new Student("Alex", 1997));
 		list.add(new Student("Colin", 1998));
 		list.add(new Student("Bart", 1999));
-		
+
+		printList(list);
+
+		list.remove(1);
+		printList(list);
+	}
+
+	private static void printList(List<Student> list) {
 		for (Student student : list) {
-			student.toString();
+			System.out.println(student);
 		}
 		System.out.println();
-		list.remove(1);
-		for (Student student : list) {
-			student.toString();
-		}
 	}
 }
