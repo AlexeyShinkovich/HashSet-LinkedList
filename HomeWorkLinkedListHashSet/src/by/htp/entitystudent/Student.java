@@ -22,7 +22,6 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		System.out.println(name+" "+dateBirth);
-		return super.toString();
+		return name+" "+dateBirth;
 	}
 }
